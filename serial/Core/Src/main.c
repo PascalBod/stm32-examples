@@ -99,7 +99,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
+  while (true)
   {
 	  if (rec_byte_event)
 	  {

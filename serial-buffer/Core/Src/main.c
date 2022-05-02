@@ -102,7 +102,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   int received_byte;
-  while (1)
+  while (true)
   {
 	  if (rec_byte_event)
 	  {
