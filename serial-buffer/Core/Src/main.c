@@ -255,6 +255,9 @@ static void MX_USART2_UART_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN USART2_Init 2 */
+  // The HAL is configured to use an RX buffer, rec_byte, of one byte.
+  // Every time a byte is received, it will be written into rec_byte,
+  // by the HAL UART ISR.
   HAL_UART_Receive_IT(&huart2, &rec_byte, 1);
   /* USER CODE END USART2_Init 2 */
 
